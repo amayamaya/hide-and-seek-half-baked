@@ -57,6 +57,9 @@ function handleGuess(correctSpot, userGuess) {
     } else 
         shedContainer.classList.add('face');
 // then if the user guess is correct, increment the correct guesses
+    winsEl.textContent = correctGuesses;
+    totalEl.textContent = totalGuesses;
+    lossesEl.textContent = totalGuesses - correctGuesses;
 }
 
     // update the DOM to show this change to the user (including the losses, not tracked directly in state)
